@@ -1,9 +1,7 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import faciltyReducer from '../store/facility-slice/facilitySlice';
 
 export const store = configureStore({
     reducer: {
-        facility: faciltyReducer,
     },
 });
 
