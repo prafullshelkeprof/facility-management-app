@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Name 1",
+        "address": "Address 1",
+        "type": "Indoor"
+    },
+    {
+        "id": 2,
+        "name": "Name 2",
+        "address": "Address 2",
+        "type": "Indoor"
+    },
+    {
+        "id": 3,
+        "name": "Name 3",
+        "address": "Address 3",
+        "type": "Outdoor"
+    },
+    {
+        "id": 4,
+        "name": "Name 4",
+        "address": "Address 4",
+        "type": "Indoor"
+    },
+    {
+        "id": 5,
+        "name": "Name 5",
+        "address": "Address 5",
+        "type": "Indoor"
+    },
+    {
+        "id": 6,
+        "name": "Name 6",
+        "address": "Address 6",
+        "type": "Indoor"
+    },
+    {
+        "id": 7,
+        "name": "Name 7",
+        "address": "Address 7",
+        "type": "Indoor"
+    },
+    {
+        "id": 8,
+        "name": "Name 8",
+        "address": "Address 8",
+        "type": "Indoor"
+    },
+    {
+        "id": 9,
+        "name": "Name 9",
+        "address": "Address 9",
+        "type": "Outdoor"
+    }
+]
