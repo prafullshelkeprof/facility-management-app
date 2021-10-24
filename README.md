@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+This project is known as Facility management app. On dashboard we have two nav options i.e. home and add facility.
+On home page I show all the available facilities. Facility Data is stored in ./server/assets/data.json file
+Facilities are shown is cards format. Page is responsive. Every facility card supports two actions, i.e. edit or delete facility
+On add facility page, user can add new facility. On click of add facility new facility will be added to the backend.
+Tech stack used,
+React
+Redux
+Typescript
+React Router dom
+Mui
+axios
+
 ## Available Scripts
 
 In the project directory, you can run:
