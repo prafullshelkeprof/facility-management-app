@@ -60,9 +60,17 @@ export function EditFacility(props: EditFacilityProps) {
         >
             <DialogTitle>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    Delete Facility
+                    Edit Facility
                 </Typography>
-                <IconButton aria-label="delete">
+                <IconButton
+                    aria-label="delete"
+                    sx={{
+                        position: 'absolute',
+                        right: 8,
+                        top: 8
+                    }}
+                    onClick={handleCancel}
+                >
                     <Close />
                 </IconButton>
             </DialogTitle>

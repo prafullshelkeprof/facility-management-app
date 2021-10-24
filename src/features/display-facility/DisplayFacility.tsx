@@ -44,7 +44,7 @@ export function DisplayFacility(props: DisplayFacilityProps) {
 
   return (
     <FormControl sx={{
-      width: 0.4
+      width: 0.6
     }}>
       <Box sx={{
         mb: 1.5

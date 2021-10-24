@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Grid,
   Button
@@ -15,12 +15,7 @@ export function AddFacility() {
   const [facilityName, setFacilityName] = useState<string>('');
   const [facilityAddress, setFacilityAddress] = useState<string>('');
   const [facilityType, setFacilityType] = useState<string>(RangeValues.Indoor);
-  const [newFacility, setNewFacility] = useState<Facility>({
-    id: Math.random(),
-    name: facilityName,
-    address: facilityAddress,
-    type: facilityType
-  } as Facility);
+  const [newFacility, setNewFacility] = useState<Facility>();
 
   const onAddressChange = (val: string): void => {
     setFacilityAddress(val);
@@ -38,13 +33,20 @@ export function AddFacility() {
       id: Math.random(),
       type: facilityType
     })
-    dispatch(addFacility(newFacility));
   }
+  useEffect(() => {
+    if (newFacility) {
+      dispatch(addFacility(newFacility));
+    }
+  }, [newFacility])
   const addFacilityButton = (
     <Button
       onClick={onAddFacilityClick}
       color='primary'
       variant='contained'
+      sx={{
+        display: 'block'
+      }}
     > Add Facility</Button>
   );
 

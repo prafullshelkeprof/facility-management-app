@@ -38,18 +38,24 @@ export function DeleteFacility(props: DeleteFacilityProps) {
       open={open}
     >
       <DialogTitle>
-        <Typography sx={{ mb: 1.5, mt: 0 }} color="text.secondary">
+        <Typography color="text.secondary">
           Delete Facility
         </Typography>
-        <IconButton aria-label="delete">
+        <IconButton
+          aria-label="delete"
+          sx={{
+            position: 'absolute',
+            right: 8,
+            top: 8
+          }}
+          onClick={handleCancel}
+        >
           <Close />
         </IconButton>
       </DialogTitle>
       <DialogContent dividers>
         <DialogContentText>
-          {
-            `Are you sure you want to delete ${name} facility? You won't be able to recover this data.`
-          }
+          {`Are you sure you want to delete ${name} facility? You won't be able to recover this data.`}
         </DialogContentText>
       </DialogContent>
       <DialogActions>
@@ -58,6 +64,6 @@ export function DeleteFacility(props: DeleteFacilityProps) {
         </Button>
         <Button variant="contained" color="error" onClick={handleDeleteFacility}>Delete</Button>
       </DialogActions>
-    </Dialog>
+    </Dialog >
   );
 }
